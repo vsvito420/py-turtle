@@ -1,26 +1,26 @@
 import turtle
 import time
 
-# Screen setup
-screen = turtle.Screen()
-screen.setup(width=600, height=600)
-screen.bgcolor("black")
-screen.tracer(0) # Turn off screen updates for smoother animation
+# Bildschirm einrichten
+bildschirm = turtle.Screen()
+bildschirm.setup(width=600, height=600)
+bildschirm.bgcolor("black")
+bildschirm.tracer(0) # Bildschirmaktualisierungen für sanftere Animation ausschalten
 
-# Turtle setup
-pen = turtle.Turtle()
-pen.speed(0) # Fastest speed
-pen.hideturtle()
-pen.pensize(2)
+# Stift einrichten
+stift = turtle.Turtle()
+stift.speed(0) # Schnellste Geschwindigkeit
+stift.hideturtle()
+stift.pensize(2)
 
-colors = ["red", "orange", "yellow", "green", "blue", "purple"]
+farben = ["red", "orange", "yellow", "green", "blue", "purple"] # Farben bleiben Englisch für turtle-Kompatibilität
 
 for i in range(360):
-    pen.pencolor(colors[i % len(colors)])
-    pen.width(i / 100 + 1)
-    pen.forward(i)
-    pen.left(59)
-    screen.update() # Update screen manually
-    # time.sleep(0.01) # Optional: slow down the animation
+    stift.pencolor(farben[i % len(farben)])
+    stift.width(i / 100 + 1)
+    stift.forward(i)
+    stift.left(59)
+    bildschirm.update() # Bildschirm manuell aktualisieren
+    # time.sleep(0.01) # Optional: Animation verlangsamen
 
-screen.mainloop() # Keep the window open
+bildschirm.mainloop() # Fenster offen halten
