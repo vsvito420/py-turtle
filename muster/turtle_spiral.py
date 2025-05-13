@@ -11,7 +11,7 @@ bildschirm.tracer(0) # Bildschirmaktualisierungen für sanftere Animation aussch
 stift = turtle.Turtle()
 stift.speed(0) # Schnellste Geschwindigkeit
 stift.hideturtle()
-stift.pensize(2)
+stift.pensize(20)
 
 farben = ["red", "orange", "yellow", "green", "blue", "purple"] # Farben bleiben Englisch für turtle-Kompatibilität
 
